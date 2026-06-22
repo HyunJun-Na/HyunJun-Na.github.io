@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ▼▼▼ 본인 정보로 바꾸세요 ▼▼▼ -->
+<title>Hyun June Na | Mechanical Engineering</title>
+<meta name="description" content="Hyun June Na — Mechanical Engineering student at Seoul National University.">
+<!-- ▲▲▲ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1f3864; --ink:#1a1a1a; --grey:#5c6470; --line:#e3e6ec;
+    --bg:#fbfbfd; --accent:#2e6fb0; --maxw:760px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Inter',system-ui,sans-serif; color:var(--ink);
+    background:var(--bg); line-height:1.6; font-size:16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:64px 28px 96px}
+
+  /* ── Header ── */
+  header{margin-bottom:8px}
+  h1{font-family:'Newsreader',serif; font-size:44px; font-weight:500;
+     letter-spacing:-.01em; color:var(--navy); line-height:1.1}
+  .role{color:var(--grey); font-size:15px; margin-top:8px; font-weight:500}
+  .contact{margin-top:16px; display:flex; flex-wrap:wrap; gap:14px;
+           font-size:14px}
+  .contact a{color:var(--accent); text-decoration:none; font-weight:500}
+  .contact a:hover{text-decoration:underline}
+  .contact span{color:var(--line)}
+
+  /* ── Sections ── */
+  section{margin-top:40px}
+  h2{font-family:'Inter',sans-serif; font-size:12px; font-weight:700;
+     letter-spacing:.13em; text-transform:uppercase; color:var(--navy);
+     padding-bottom:8px; border-bottom:2px solid var(--navy); margin-bottom:18px}
+
+  .intro{font-family:'Newsreader',serif; font-size:18px; line-height:1.65; color:#33373f}
+
+  .entry{margin-bottom:22px}
+  .entry-head{display:flex; justify-content:space-between; align-items:baseline; gap:16px}
+  .entry-title{font-weight:600; font-size:16px; color:var(--ink)}
+  .entry-title a{color:var(--navy); text-decoration:none}
+  .entry-title a:hover{text-decoration:underline}
+  .entry-date{color:var(--grey); font-size:13px; white-space:nowrap; font-weight:500}
+  .entry-sub{color:var(--grey); font-size:14px; font-style:italic; margin-top:2px}
+  .entry-body{margin-top:6px; font-size:15px; color:#3a3f48}
+  ul{margin-top:6px; padding-left:18px}
+  li{font-size:15px; color:#3a3f48; margin-bottom:4px}
+
+  .skills-row{display:flex; gap:10px; margin-bottom:8px; font-size:15px}
+  .skills-label{font-weight:600; color:var(--navy); min-width:120px; flex-shrink:0}
+
+  .award{font-size:15px; margin-bottom:6px}
+  .award b{font-weight:600}
+
+  footer{margin-top:56px; padding-top:18px; border-top:1px solid var(--line);
+         font-size:13px; color:var(--grey)}
+
+  /* 안내 주석 (작성 후 삭제) */
+  .note{background:#fff7e6; border-left:3px solid #e0a800; padding:10px 14px;
+        font-size:13px; color:#7a5b00; margin:10px 0; border-radius:0 4px 4px 0}
+
+  @media (max-width:560px){
+    .wrap{padding:40px 20px 64px}
+    h1{font-size:34px}
+    .entry-head{flex-direction:column; gap:2px}
+    .skills-row{flex-direction:column; gap:2px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="note">📝 이 노란 박스들은 작성 안내입니다. 내용을 채운 뒤 <code>class="note"</code> div들을 모두 지우세요. 대괄호 [ ] 부분을 본인 정보로 바꾸면 됩니다.</div>
+
+  <!-- ══════════ HEADER ══════════ -->
+  <header>
+    <h1>Hyun June Na</h1>
+    <div class="role">B.S. in Mechanical Engineering · Seoul National University</div>
+    <div class="contact">
+      <a href="mailto:oasis20030324@snu.ac.kr">oasis20030324@snu.ac.kr</a>
+      <span>·</span>
+      <a href="https://github.com/[아이디]">GitHub</a>
+      <span>·</span>
+      <a href="./CV.pdf">CV (PDF)</a>
+      <span>·</span>
+      <a href="https://linkedin.com/in/[아이디]">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- ══════════ ABOUT / INTEREST ══════════ -->
+  <section>
+    <h2>About</h2>
+    <div class="note">→ 방향이 정해지면 한 문단으로. 단순히 "로봇에 관심"이 아니라, 어떤 접근을 왜 중시하는지·어떤 응용에 쓰고 싶은지까지. 미정이면 전공·현재 소속(랩/동아리)만 한두 문장으로.</div>
+    <p class="intro">
+      I am an undergraduate student in Mechanical Engineering at Seoul National University,
+      with interests in [관심 분야]. [현재 소속 랩/활동, 연구 목표 한 줄].
+    </p>
+  </section>
+
+  <!-- ══════════ EDUCATION ══════════ -->
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Seoul National University</span>
+        <span class="entry-date">2022.03 – Present</span>
+      </div>
+      <div class="entry-sub">B.S. in Mechanical Engineering [· 복수전공/부전공]</div>
+      <div class="entry-body">GPA: [X.XX / 4.5] · [이수 학점/주요 과목]</div>
+    </div>
+  </section>
+
+  <!-- ══════════ RESEARCH EXPERIENCE ══════════ -->
+  <section>
+    <h2>Research Experience</h2>
+    <div class="note">→ 학교 랩 연구. 진행 중인 것도 상태 표기해서 넣으세요 (예: "Manuscript in preparation", "Undergraduate Researcher"). 없으면 이 섹션을 지우고 Projects 위주로 가도 됩니다.</div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">[역할/상태] · [랩 이름] ([지도교수])</span>
+        <span class="entry-date">[20XX.XX – 현재]</span>
+      </div>
+      <div class="entry-sub">[연구 제목]</div>
+      <div class="entry-body">[무엇을 연구/구현했는지. 가능하면 수치로.]</div>
+    </div>
+  </section>
+
+  <!-- ══════════ FEATURED PROJECTS ══════════ -->
+  <section>
+    <h2>Featured Projects</h2>
+    <div class="note">→ 웹 CV의 핵심. 프로젝트마다 GitHub 링크 + 무엇을 어떻게 만들었는지. 이미지·영상을 넣을 수 있으면 강력합니다 (&lt;img&gt; 태그 추가). 실물 제작(CAD→제작→시뮬→실물)이 들어가면 기계과에 특히 좋음.</div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title"><a href="https://github.com/[아이디]/[레포]">[프로젝트명]</a></span>
+        <span class="entry-date">[20XX.XX – 20XX.XX]</span>
+      </div>
+      <div class="entry-sub">[팀 규모 / 본인 역할]</div>
+      <div class="entry-body">[무엇을 만들었고 본인이 무엇을 맡았는지. 결과·성과를 정량적으로.]</div>
+      <!-- 이미지 예시: <img src="./img/project1.png" style="width:100%;border-radius:6px;margin-top:10px"> -->
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title"><a href="#">[프로젝트명 2]</a></span>
+        <span class="entry-date">[20XX.XX – 20XX.XX]</span>
+      </div>
+      <div class="entry-sub">[팀 규모 / 본인 역할]</div>
+      <div class="entry-body">[설명]</div>
+    </div>
+  </section>
+
+  <!-- ══════════ TECHNICAL SKILLS ══════════ -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="note">→ 실제로 다룰 수 있는 것만. 과장 금지.</div>
+    <div class="skills-row"><span class="skills-label">CAD/Design</span><span>[SolidWorks, CATIA, Fusion360 ...]</span></div>
+    <div class="skills-row"><span class="skills-label">Simulation/CAE</span><span>[ANSYS, Abaqus, COMSOL ...]</span></div>
+    <div class="skills-row"><span class="skills-label">Programming</span><span>[MATLAB, Python, C/C++ ...]</span></div>
+    <div class="skills-row"><span class="skills-label">Etc</span><span>[ROS, 3D 프린팅, 가공 경험 ...]</span></div>
+  </section>
+
+  <!-- ══════════ AWARDS ══════════ -->
+  <section>
+    <h2>Awards & Scholarships</h2>
+    <div class="award"><b>[수상명]</b> — [주최기관], 20XX</div>
+    <div class="award"><b>[장학금명]</b> — [기관], 20XX</div>
+  </section>
+
+  <!-- ══════════ ACTIVITIES ══════════ -->
+  <section>
+    <h2>Activities & Leadership</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">[활동/단체명] · [역할]</span>
+        <span class="entry-date">[20XX.XX – 20XX.XX]</span>
+      </div>
+      <div class="entry-body">[무엇을 했는지]</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 [이름]. Last updated [작성일].
+  </footer>
+
+</div>
+</body>
+</html>
