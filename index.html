@@ -3,77 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- ▼▼▼ 본인 정보로 바꾸세요 ▼▼▼ -->
 <title>Hyun June Na | Mechanical Engineering</title>
 <meta name="description" content="Hyun June Na — Mechanical Engineering student at Seoul National University.">
-<!-- ▲▲▲ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --navy:#1f3864; --ink:#1a1a1a; --grey:#5c6470; --line:#e3e6ec;
-    --bg:#ffffff; --accent:#2e6fb0; --maxw:760px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    font-family:'Inter',system-ui,sans-serif; color:var(--ink);
-    background:var(--bg); line-height:1.6; font-size:16px;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:64px 28px 96px}
-
-  /* ── Header ── */
-  header{margin-bottom:8px}
-  h1{font-family:'Newsreader',serif; font-size:44px; font-weight:500;
-     letter-spacing:-.01em; color:var(--navy); line-height:1.1}
-  .role{color:var(--grey); font-size:15px; margin-top:8px; font-weight:500}
-  .contact{margin-top:16px; display:flex; flex-wrap:wrap; gap:14px;
-           font-size:14px}
-  .contact a{color:var(--accent); text-decoration:none; font-weight:500}
-  .contact a:hover{text-decoration:underline}
-  .contact span{color:var(--line)}
-
-  /* ── Sections ── */
-  section{margin-top:40px}
-  h2{font-family:'Inter',sans-serif; font-size:12px; font-weight:700;
-     letter-spacing:.13em; text-transform:uppercase; color:var(--navy);
-     padding-bottom:8px; border-bottom:2px solid var(--navy); margin-bottom:18px}
-
-  .intro{font-family:'Newsreader',serif; font-size:18px; line-height:1.65; color:#33373f}
-
-  .entry{margin-bottom:22px}
-  .entry-head{display:flex; justify-content:space-between; align-items:baseline; gap:16px}
-  .entry-title{font-weight:600; font-size:16px; color:var(--ink)}
-  .entry-title a{color:var(--navy); text-decoration:none}
-  .entry-title a:hover{text-decoration:underline}
-  .entry-date{color:var(--grey); font-size:13px; white-space:nowrap; font-weight:500}
-  .entry-sub{color:var(--grey); font-size:14px; font-style:italic; margin-top:2px}
-  .entry-body{margin-top:6px; font-size:15px; color:#3a3f48}
-  ul{margin-top:6px; padding-left:18px}
-  li{font-size:15px; color:#3a3f48; margin-bottom:4px}
-
-  .skills-row{display:flex; gap:10px; margin-bottom:8px; font-size:15px}
-  .skills-label{font-weight:600; color:var(--navy); min-width:120px; flex-shrink:0}
-
-  .award{font-size:15px; margin-bottom:6px}
-  .award b{font-weight:600}
-
-  footer{margin-top:56px; padding-top:18px; border-top:1px solid var(--line);
-         font-size:13px; color:var(--grey)}
-
-
-  @media (max-width:560px){
-    .wrap{padding:40px 20px 64px}
-    h1{font-size:34px}
-    .entry-head{flex-direction:column; gap:2px}
-    .skills-row{flex-direction:column; gap:2px}
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
-
 
   <!-- ══════════ HEADER ══════════ -->
   <header>
@@ -111,29 +49,64 @@
   <!-- ══════════ PROJECTS ══════════ -->
   <section>
     <h2>Featured Projects</h2>
-    <div class="entry">
-      <div class="entry-head">
-        <span class="entry-title">WAM (Weightlifting Assistant Machine) — Clamp-on Strength Training Assist Device</span>
-        <span class="entry-date">2026.03 – 2026.06</span>
-      </div>
-      <div class="entry-sub">Mechatronics Course Team Project (Team 10, 5 members) · Hardware Lead</div>
-      <div class="entry-body">
-        <p>WAM is a clamp-on device that adds motor-driven assistive force to ordinary commercial gym machines, letting users train closer to their limit safely. As hardware lead, I owned the mechanical design and fabrication end to end.</p>
-        <p>The core challenge was the drive mechanism. I first approached it with a rack-and-pinion linear actuator, but it proved too heavy and couldn't secure enough stroke to attach and detach on existing machines. I switched to a drum-and-strap cable-winding system: the motor rotates a drum to wind a strap, and that tension is transmitted as assistive force — far lighter and easy to mount or remove.</p>
-        <p>I modeled the full motor-drum-strap transmission in CAD and fabricated the enclosure and mechanical assembly. To make WAM universal, I proposed an adjustable clamp mount that fits nearly any standard "plate &amp; pin" machine — unlike competitor products built into a single machine. Constrained by the project budget, I sized the design around a low-cost motor for stable 6 kg assistance, with clear headroom to scale the force using a stronger motor. The project placed 4th out of 16 teams in the course's final competition.</p>
-      </div>
-      <img src="img/wam_build.jpg" alt="Assembled hardware prototype" style="width:100%;border-radius:6px;margin-top:10px">
-      <div class="entry-sub" style="margin-top:6px">Assembled hardware prototype</div>
-      <div style="max-width:315px;margin:12px auto 0">
-        <div style="position:relative;padding-top:177.78%;border-radius:6px;overflow:hidden">
-          <iframe src="https://www.youtube.com/embed/aJdGBhjqVo4" title="WAM 6 kg assistance demo"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+
+    <!-- ── CNSL Screw Press ── -->
+    <div class="card">
+      <a href="projects/cnsl-screw-press.html">
+        <img class="card-thumb" src="img/cnsl_press_build.jpg"
+             alt="Assembled CNSL screw press with geared motor and hopper">
+      </a>
+      <div class="card-body">
+        <div class="card-title-row">
+          <span class="card-title">CNSL Screw Press</span>
+          <span class="card-meta">capstone design · team of 4 · team lead</span>
         </div>
-        <div class="entry-sub" style="margin-top:6px;text-align:center">6 kg assistance demo</div>
+        <p class="card-desc">
+          A screw press converting Tanzania's waste cashew shells into CNSL, an industrial
+          phenolic oil — variable-pitch screw and poppet-valve discharge, designed to run
+          without chemical processing or refining equipment. Selected for a 2026 field
+          pilot in Tanzania.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Appropriate Technology</span>
+          <span class="tag">CAD → Fabrication</span>
+          <span class="tag">Screw Press</span>
+        </div>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="projects/cnsl-screw-press.html">Details →</a>
+          <a class="btn btn-ghost" href="https://youtu.be/CVxQEKFyI-w">Demo ↗</a>
+        </div>
       </div>
     </div>
+
+    <!-- ── WAM ── -->
+    <div class="card">
+      <a href="projects/wam.html">
+        <img class="card-thumb" src="img/wam_build.jpg"
+             alt="Assembled WAM hardware prototype">
+      </a>
+      <div class="card-body">
+        <div class="card-title-row">
+          <span class="card-title">WAM: Weightlifting Assistant Machine</span>
+          <span class="card-meta">mechatronics · team of 5 · hardware lead · 특상 (4th/16)</span>
+        </div>
+        <p class="card-desc">
+          A clamp-on device that adds motor-driven assistive force to ordinary commercial
+          gym machines — a drum-and-strap winding drive and an adjustable clamp mount that
+          fits nearly any standard plate-and-pin machine.
+        </p>
+        <div class="card-tags">
+          <span class="tag">Mechatronics</span>
+          <span class="tag">Mechanism Design</span>
+          <span class="tag">Prototyping</span>
+        </div>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="projects/wam.html">Details →</a>
+          <a class="btn btn-ghost" href="https://youtu.be/aJdGBhjqVo4">Demo ↗</a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- ══════════ AWARDS ══════════ -->
@@ -141,18 +114,30 @@
     <h2>Awards &amp; Scholarships</h2>
     <div class="entry">
       <div class="entry-head">
+        <span class="entry-title">Finalist — S.M.A.R.T International Sustainable Technology Competition</span>
+        <span class="entry-date">2026.06</span>
+      </div>
+      <div class="entry-sub">Academic Society for Appropriate Technology · Team COMET (Team Lead) · <a href="projects/cnsl-screw-press.html" style="color:var(--accent);font-style:normal">CNSL Screw Press</a></div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
         <span class="entry-title">특상 (4th Place), Mechatronics Final Project Competition</span>
         <span class="entry-date">2026.06</span>
       </div>
-      <div class="entry-sub">Mechatronics, SNU</div>
-      <div class="entry-body">
-        <p>특상 (4th place out of 16 teams) at the Mechatronics course final project competition for the WAM (Weightlifting Assistant Machine) project.</p>
+      <div class="entry-sub">Mechatronics, SNU · <a href="projects/wam.html" style="color:var(--accent);font-style:normal">WAM</a></div>
+    </div>
+    <div class="entry">
+      <div class="entry-head">
+        <span class="entry-title">Selected — 2026 Appropriate Technology-based Youth Startup Global PoC Support Program (Tanzania Field Pilot)</span>
+        <span class="entry-date">2026.05</span>
       </div>
+      <div class="entry-sub">Sanhak Foundation · UNITEF · Academic Society for Appropriate Technology · Team COMET (Team Lead) · <a href="projects/cnsl-screw-press.html" style="color:var(--accent);font-style:normal">CNSL Screw Press</a></div>
     </div>
   </section>
 
   <footer>
-    © 2026 Hyun June Na. &nbsp;·&nbsp; Last updated 2026-06-24
+    <span>© 2026 Hyun June Na</span>
+    <span>Last updated 2026-07-16</span>
   </footer>
 
 </div>
