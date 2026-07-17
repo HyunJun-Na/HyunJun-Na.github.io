@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CNSL Screw Press | Hyun June Na</title>
+<meta name="description" content="A screw press converting Tanzania's waste cashew shells into CNSL, an industrial phenolic oil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="backlink"><a href="../index.html">← Hyun June Na</a></div>
+
+  <h1 class="detail-title">CNSL Screw Press — Waste-to-Value Oil Extraction Machine</h1>
+  <div class="detail-meta">Capstone Design · Team COMET (team of 4) · team lead · 2026.03 – 2026.06</div>
+
+  <div class="detail-body">
+
+    <figure>
+      <img src="../img/cnsl_press_build.jpg" alt="Assembled machine showing geared motor, couplings, and hopper inlet">
+    </figure>
+    <figcaption>Assembled press — geared motor, couplings, and hopper inlet.</figcaption>
+
+    <p>
+      A small screw press that turns waste cashew shells into CNSL (cashew nut shell liquid),
+      a natural phenolic oil used in friction materials, industrial coatings, and resins, and
+      increasingly studied as a sustainable aviation fuel feedstock. The machine is designed
+      to be operated by local farmers without chemical processing, refining equipment, or
+      precise temperature control. Built as an Interdisciplinary Capstone Design project at
+      the Dept. of Mechanical Engineering, SNU (Advisor: Prof. Sung-Hoon Ahn).
+    </p>
+
+    <h2>Motivation</h2>
+    <p>
+      Tanzania, Africa's second-largest cashew producer, discards an estimated
+      175,000–210,000 tons of cashew shells every year. Those shells contain CNSL — but
+      existing screw presses are designed for soft oil seeds like sesame or coconut. Cashew
+      shells are hard, irregular in size, and their oil is highly viscous, so a conventional
+      press clogs and yields poorly. Team COMET set out to build a machine that turns this
+      waste stream into a revenue source for local farmers.
+    </p>
+
+    <h2>Mechanical Design</h2>
+    <p>
+      As team lead, I drove the mechanical design around the constraints of cashew shells:
+    </p>
+    <ul>
+      <li>A <b>variable-pitch screw</b> that progressively compresses the shells as they advance;</li>
+      <li><b>Tapered discharge slits</b> whose cross-section expands outward so the viscous oil cannot clog the outlet;</li>
+      <li><b>Internal barrel protrusions</b> that prevent the material from co-rotating with the screw and raise pressure at the slit inlet;</li>
+      <li>A <b>poppet-valve structure</b> that regulates discharge pressure.</li>
+    </ul>
+    <p>
+      Screw pitch, screw-barrel clearance, and barrel bore were set by an oil-flow model I
+      built from cashew-shell material properties and machine measurements, and the geared
+      motor was sized from the calculated extraction pressure and target flow rate rather
+      than picked off a catalog.
+    </p>
+
+    <figure>
+      <img src="../img/cnsl_press_cad.png" alt="3D CAD render of the screw, barrel, and poppet assembly">
+    </figure>
+    <figcaption>3D CAD render — screw, barrel, and poppet assembly.</figcaption>
+
+    <h2>Fabrication</h2>
+    <p>
+      I modeled the machine in Fusion 360 and SolidWorks, then produced roughly ten 2D
+      fabrication drawings in AutoCAD for custom parts. I handled the entire vendor loop
+      myself — requesting quotes from metal fabrication shops, revising drawings and the 3D
+      model in response to manufacturability feedback, and receiving the finished parts —
+      which taught me first-hand how drawings for real fabrication differ from classroom
+      drawings. In parallel I selected and purchased the standard mechanical components
+      (geared motor, shaft couplings, bearings) to match the design specifications. The
+      whole cycle from design kickoff to finished drawings took about a month and a half,
+      on a total build budget of roughly KRW 5 million.
+    </p>
+
+    <figure>
+      <img src="../img/cnsl_press_drawing.png" alt="2D fabrication drawing of the variable-pitch screw, flange, and barrel">
+    </figure>
+    <figcaption>2D fabrication drawing — variable-pitch screw, flange, and barrel.</figcaption>
+
+    <h2>Assembly &amp; Validation</h2>
+    <p>
+      Assembly happened in one overnight session that I led. Real hardware pushed back:
+      some dimensions didn't mate as drawn and several parts needed additional machining on
+      the spot, which we resolved with hand tools, shop machines, and engineering judgment
+      rather than another vendor round-trip. The completed press was validated with
+      substitute feedstocks — peanuts and sesame chosen to approximate the oil content,
+      viscosity, and hardness of cashew shells, which are not obtainable in Korea — and
+      successfully extracted oil in live demonstration.
+    </p>
+
+    <div class="video-wide">
+      <iframe src="https://www.youtube.com/embed/CVxQEKFyI-w" title="CNSL screw press oil extraction demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <figcaption>Oil extraction demo with substitute feedstock.</figcaption>
+
+    <h2>Recognition &amp; What's Next</h2>
+    <ul>
+      <li><b>Selected</b>, 2026 Appropriate Technology-based Youth Startup Global PoC Support
+        Program (Sanhak Foundation · UNITEF · Academic Society for Appropriate Technology) —
+        one of only four teams selected for the Tanzania track (eight nationwide). The program
+        funds on-site validation in Tanzania, where we will collect performance data on real
+        cashew shells (moisture content, size variance, residual oil) to drive a
+        second-generation design.</li>
+      <li><b>Finalist</b>, S.M.A.R.T International Sustainable Technology Competition
+        (Academic Society for Appropriate Technology, 2026).</li>
+      <li>A patent filing strategy covering the variable-pitch screw, barrel, and poppet
+        system is in preparation.</li>
+    </ul>
+
+    <h2>Role</h2>
+    <p>
+      Team of 4, team lead. Owned CAD design (Fusion 360, SolidWorks, AutoCAD), the
+      oil-flow model and motor sizing, fabrication sourcing and vendor communication, and
+      led the assembly session.
+    </p>
+
+    <div class="detail-actions">
+      <a class="btn btn-primary" href="https://youtu.be/CVxQEKFyI-w">Demo ↗</a>
+      <a class="btn btn-ghost" href="../index.html">← Back to profile</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>© 2026 Hyun June Na</span>
+    <span>Last updated 2026-07-16</span>
+  </footer>
+
+</div>
+</body>
+</html>

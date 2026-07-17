@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WAM: Weightlifting Assistant Machine | Hyun June Na</title>
+<meta name="description" content="A clamp-on device that adds motor-driven assistive force to commercial gym machines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <div class="backlink"><a href="../index.html">← Hyun June Na</a></div>
+
+  <h1 class="detail-title">WAM: Weightlifting Assistant Machine</h1>
+  <div class="detail-meta">Mechatronics · Team 10 (team of 5) · hardware lead · 특상 (4th/16) · 2026.03 – 2026.06</div>
+
+  <div class="detail-body">
+
+    <figure>
+      <img src="../img/wam_build.jpg" alt="Assembled WAM hardware prototype">
+    </figure>
+    <figcaption>Assembled hardware prototype.</figcaption>
+
+    <p>
+      WAM is a clamp-on device that adds motor-driven assistive force to ordinary commercial
+      gym machines, letting users train closer to their limit safely. Built as the final
+      team project for the Mechatronics course at SNU. As hardware lead, I owned the
+      mechanical design and fabrication end to end.
+    </p>
+
+    <h2>Motivation</h2>
+    <p>
+      Training near your limit is where strength gains happen — and where a spotter is
+      normally required. Assist systems that solve this do exist, but they are built into
+      a single dedicated machine: a gym has to replace equipment to get the feature. WAM
+      takes the opposite approach — a small retrofit unit that clamps onto the machines a
+      gym already owns and adds a controlled assistive force on demand.
+    </p>
+
+    <h2>Drive Mechanism — Design Pivot</h2>
+    <p>
+      The core challenge was the drive mechanism. I first approached it with a
+      rack-and-pinion linear actuator, but it proved too heavy and couldn't secure enough
+      stroke to attach and detach on existing machines. I switched to a drum-and-strap
+      cable-winding system: the motor rotates a drum to wind a strap, and that tension is
+      transmitted as assistive force — far lighter and easy to mount or remove.
+    </p>
+
+    <h2>Mechanical Design</h2>
+    <p>
+      I modeled the full motor-drum-strap transmission in CAD and fabricated the enclosure
+      and mechanical assembly. To make WAM universal, I proposed an adjustable clamp mount
+      that fits nearly any standard "plate &amp; pin" machine — unlike competitor products
+      built into a single machine.
+    </p>
+
+    <h2>System &amp; Control</h2>
+    <p>
+      The device runs closed-loop <b>constant-tension control</b> on an Arduino: an ACS712
+      current sensor reads motor current, the firmware converts it to an estimated strap
+      tension (0.8 kgf/A), and a PI loop drives the DC motor through a BTS7960 driver to
+      hold the target tension. A state machine separates slack take-up from the
+      constant-tension phase, a soft zone suppresses hunting around the setpoint, a hard
+      limit cuts power on over-tension, and encoder-based soft limits bound the travel. A
+      foot switch cycles three assistance modes (1.5 / 4 / 6 kgf) shown on an LCD.
+      Control firmware and circuitry were implemented by teammates; I designed and built
+      the mechanical system they run on.
+    </p>
+
+    <h2>Results</h2>
+    <ul>
+      <li>Stable <b>6 kg</b> of assistance, validated by lifting a 6 kg load on a
+        self-made test rig.</li>
+      <li>Three selectable assistance modes — <b>1.5 / 4 / 6 kgf</b> — switched by foot
+        while training.</li>
+      <li>Force ceiling set by a low-cost motor chosen within the project budget, with
+        clear headroom to scale assistance using a stronger motor.</li>
+      <li><b>특상 (4th place out of 16 teams)</b> at the course's final project competition.</li>
+    </ul>
+
+    <div class="video-tall">
+      <div class="frame">
+        <iframe src="https://www.youtube.com/embed/aJdGBhjqVo4" title="WAM 6 kg assistance demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+    <figcaption>6 kg assistance demo.</figcaption>
+
+    <h2>Role</h2>
+    <p>
+      Team of 5, hardware lead. Owned the drive-mechanism design and pivot, CAD modeling of
+      the motor-drum-strap transmission, enclosure fabrication, and the adjustable clamp
+      mount concept.
+    </p>
+
+    <div class="detail-actions">
+      <a class="btn btn-primary" href="https://youtu.be/aJdGBhjqVo4">Demo ↗</a>
+      <a class="btn btn-ghost" href="../index.html">← Back to profile</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <span>© 2026 Hyun June Na</span>
+    <span>Last updated 2026-07-16</span>
+  </footer>
+
+</div>
+</body>
+</html>
